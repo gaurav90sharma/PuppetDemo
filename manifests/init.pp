@@ -9,6 +9,7 @@ package { $prerequisites: ensure => 'installed',
           require => Exec[$updater],
         }
 
+#update the package management tools on the target system
 exec { 'apt-get update':
         command => "/usr/bin/apt-get update",
 }
