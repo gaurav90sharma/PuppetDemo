@@ -1,5 +1,5 @@
 class openresty (
-$packages = $openresty::params::prerequisites,
+$prerequisites = $openresty::params::prerequisites,
 $updater =  $openresty::params::updater
 )inherits openresty::params{
 
