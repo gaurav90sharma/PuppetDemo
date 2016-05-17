@@ -17,6 +17,7 @@ exec { 'yum update':
 
 }
 
+#openresty source tarball
 file {
         'openresty-1.9.7.4.tar.gz':
         ensure => 'file',
@@ -27,6 +28,7 @@ file {
         source => 'puppet:///modules/openresty/openresty-1.9.7.4.tar.gz',
         }
 
+#openresty installer file,it will build the package on the agent system
 file {
       'OpenrestyInstaller.sh':
       ensure => 'file',
